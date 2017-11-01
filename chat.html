@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Phantom by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="chat.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+        <div class="menu">
+            <div class="back"><a href="index.html"><i class="fa fa-chevron-left"></i> <img src="https://i.imgur.com/DY6gND0.png" draggable="false"/></a></div>
+            <div class="name">Alex</div>
+            <div class="last">18:09</div>
+        </div>
+
+        <div class="menu2">
+          <button class="button1">Attach a File</button>
+          <a href="tip.html"><button class="button2">Problem Solved</button></a>
+        </div>
+
+        
+    <br>
+    <br>
+    <ol class="chat">
+    <li class="other">
+        <div class="avatar"><img src="https://i.imgur.com/DY6gND0.png" draggable="false"/></div>
+      <div class="msg">
+        <p>Hey! I see you're having trouble with stuff</p>
+        <p>I'm trying to make money for <emoji class="pizza"/></p>
+        <time>20:17</time>
+      </div>
+    </li>
+    <li class="self">
+        <div class="avatar"><img src="https://i.imgur.com/HYcn9xO.png" draggable="false"/></div>
+      <div class="msg">
+        <p>Puff...</p>
+        <p>Yes! I miss the days of normal <emoji class="books"/></p>
+        <p>I can't figure out how to kindle</p>
+        <time>20:18</time>
+      </div>
+    </li>
+    <li class="other">
+        <div class="avatar"><img src="https://i.imgur.com/DY6gND0.png" draggable="false"/></div>
+      <div class="msg">
+        <p><emoji class="suffocated"/></p>
+        <p>Could you describe your problem to me?</p>
+        <time>20:18</time>
+      </div>
+    </li>
+    <li class="self">
+        <div class="avatar"><img src="https://i.imgur.com/HYcn9xO.png" draggable="false"/></div>
+      <div class="msg">
+        <p>Well my issue is consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt</p>
+        <time>20:18</time>
+      </div>
+    </li>
+    <li class="other">
+        <div class="avatar"><img src="https://i.imgur.com/DY6gND0.png" draggable="false"/></div>
+      <div class="msg">
+        <p>Well you can fix that easy as a <emoji class="please"/></p>
+        <p>And here's how: velit esse cillum dolore eu fugiat nulla pariatur</p>
+        <time>20:18</time>
+      </div>
+    </li>
+    <li class="self">
+        <div class="avatar"><img src="https://i.imgur.com/HYcn9xO.png" draggable="false"/></div>
+      <div class="msg">
+        <p>Wow that really was easy. Thank you so much <emoji class="cryalot"/></p>
+        <time>18:08</time>
+      </div>
+    </li>
+    <li class="self">
+        <div class="avatar"><img src="https://i.imgur.com/HYcn9xO.png" draggable="false"/></div>
+      <div class="msg">
+        <p>Thanks for all your help!</p>
+        <p>Gonna tell all my friends about this app</p>
+        <p>And leave you a nice tip ;) </p>
+        <time>18:09</time>
+      </div>
+    </li>
+    </ol>
+    <input class="textarea" type="text" placeholder="Type here!"/><div class="emojis"></div>
+						</div>
+					</div>
+
+				<!-- Footer -->
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+      <!-- JS file -->
+      <script src="assets/js/jquery.easy-autocomplete.min.js"></script> 
+
+      <!-- CSS file -->
+      <link rel="stylesheet" href="assets/js/easy-autocomplete.min.css"> 
+
+      <!-- Additional CSS Themes file - not required-->
+      <link rel="stylesheet" href="assets/js/easy-autocomplete.themes.min.css"> 
+      <script>
+
+      var options = {
+        data: [{"text": "iphone 3", "website-link": "/loading.html"},
+               {"text": "iphone 9", "website-link": "loading.html"},
+               {"text": "iphone y", "website-link": "loading.html"},
+               {"text": "iphone g", "website-link": "loading.html"},
+               {"text": "pixel", "website-link": "loading.html"},
+               {"text": "pixel 2", "website-link": "loading.html"},
+               {"text": "samsung", "website-link": "loading.html"},
+               {"text": "dell", "website-link": "loading.html"},
+               {"text": "lenovo", "website-link": "loading.html"},
+               {"text": "macbook", "website-link": "loading.html"},
+            ],
+          placeholder: "Type device here...",
+          getValue: "text",
+          template: {
+              type: "links",
+                fields: {
+                  link: "website-link"
+                }
+          },
+          list: {
+              maxNumberOfElements: 3,
+              onKeyEnterEvent: function() {
+                console.log("enter");
+                window.location.href = "loading.html"; },
+              match: {
+                enabled: true
+              }
+          }
+      };
+
+      console.log(options);
+
+      $("#basics").easyAutocomplete(options);
+
+      </script>
+
+	</body>
+</html>

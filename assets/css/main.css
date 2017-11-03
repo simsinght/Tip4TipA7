@@ -2217,8 +2217,9 @@
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+	input[type="tel"],
 	select {
-		height: 3em;
+		height: 1em;
 	}
 
 	textarea {
@@ -3373,6 +3374,10 @@
 
 
 /* OUR CSS */
+  #submitButton {
+  	margin-top: 2em;
+  }
+
   .aboveButton {
     margin-bottom: 0px;
     margin-top: 2em;

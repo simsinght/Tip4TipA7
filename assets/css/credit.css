@@ -1,0 +1,72 @@
+.creditCardForm {
+    max-width: 700px;
+    background-color: #fff;
+    margin: 100px auto;
+    overflow: hidden;
+    padding: 25px;
+}
+.creditCardForm label {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.creditCardForm .heading h2 {
+    text-align: center;
+}
+.creditCardForm .payment {
+    float: left;
+    font-size: 18px;
+    padding: 10px 25px;
+    margin-top: 20px;
+    position: relative;
+}
+.creditCardForm .payment .form-group {
+    float: left;
+    margin-bottom: 15px;
+}
+.creditCardForm .payment .form-control {
+    line-height: 40px;
+    height: auto;
+    padding: 0 16px;
+}
+.creditCardForm .owner {
+    width: 63%;
+    margin-right: 10px;
+}
+.creditCardForm .CVV {
+    width: 100%;
+}
+.creditCardForm #card-number-field {
+    width: 100%;
+}
+.creditCardForm #expiration-date {
+    width: 40%;
+}
+.creditCardForm #credit_cards {
+    width: 50%;
+    margin-top: 25px;
+    text-align: right;
+}
+.creditCardForm .payment .btn {
+    width: 100%;
+    margin-top: 3px;
+    background-color: #2ec4a5;
+    color: white;
+}
+.creditCardForm .payment select {
+    padding: 10px;
+    margin-right: 15px;
+}
+.transparent {
+    opacity: 0.2;
+}
+@media(max-width: 650px) {
+    .creditCardForm .owner,
+    .creditCardForm .CVV,
+    .creditCardForm #expiration-date,
+    .creditCardForm #credit_cards {
+        width: 100%;
+    }
+    .creditCardForm #credit_cards {
+        text-align: left;
+    }
+}

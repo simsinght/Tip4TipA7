@@ -71,7 +71,7 @@ function fakeMessage() {
   if ($('.message-input').val() != '') {
     return false;
   }
-  $('<div class="message loading new"><span></span></div>').appendTo($('.mCSB_container'));
+  $('<div class="message loading new"><span>  &#32; &#186; &#186; &#186;</span></div>').appendTo($('.mCSB_container'));
   updateScrollbar();
 
   setTimeout(function() {

@@ -5,16 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Credit Card</title>
 
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/credit.css">
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="assets/js/skel.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+
 </head>
 
 <body>
@@ -26,7 +22,7 @@
                         <div class="inner">
 
                             <!-- Logo -->
-                                <a href="index.html" class="logo">
+                                <a href="rate.html" class="logo">
                                     <span class="symbol"></span><span class="title">< back</span>
                                 </a>
                         </div>
@@ -36,27 +32,48 @@
                     <div id="main">
                         <div class="inner">
                             <h1>Payment</h1>
-                                <div class="creditCardForm">
-                                    <div class="heading">
-                                        <h2>Credit Card Information</h2>
+                                <div class="amount-btns">
+                                    <h2> Select your tip amount:</h2>
+                                    <div class="btn-group" id="sos" data-toggle="buttons">
+                                        <label class="btn btn-primary active">
+                                            <input type="radio" name="options" id="option1" autocomplete="off" checked> $1.00
+                                        </label>
+                                        <label class="btn btn-primary">
+                                            <input type="radio" name="options" id="option2" autocomplete="off"> $5.00
+                                        </label>
+                                        <label class="btn btn-primary">
+                                            <input type="radio" name="options" id="option3" autocomplete="off"> $10.00
+                                        </label>
+                                    <form>
+                                        <div class = "ownAmount">
+                                            <label for="c2">Choose your own amount:</label>
+                                            <div class="input-group"> 
+                                                <span class="input-group-addon">$</span>
+                                                <input type="number" value="0" min="0" step="0.01" data-number-to-fixed="2" data-number-stepfactor="100" class="form-control currency" id="c2" />
+                                            </div>
+                                        </div>
+                                    </form>
                                     </div>
+                                </div>
+                                <div class="creditCardForm">
                                     <div class="payment">
+                                        <h2>Credit Card Information:</h2>
                                         <form>
                                             <div class="form-group owner">
-                                                <label for="owner">Owner</label>
-                                                <input type="text" class="form-control" id="owner">
+                                                <label for="owner">Card Holder's Name</label>
+                                                <input type="text" class="form-control" id="owner" placeholder="Name on Card">
                                             </div>
                                             <div class="form-group" id="card-number-field">
                                                 <label for="cardNumber">Card Number</label>
-                                                <input type="number" class="form-control" id="cardNumber">
+                                                <input type="text" maxlength="12" class="form-control" id="cardNumber" placeholder = "12 Digit Number">
                                             </div>
                                             <div class="form-group CVV">
                                                 <label for="cvv">CVV</label>
-                                                <input type="number" class="form-control" id="cvv">
+                                                <input type="text" maxlength="3" class="form-control" id="cvv" placeholder="3 Digit Security Code on Back">
                                             </div>
                                             <div class="form-group" id="expiration-date">
                                                 <label>Expiration Date</label>
-                                                <input type="text" class="form-control" id="expirationDate">
+                                                <input type="text" class="form-control" id="expirationDate" placeholder="Month/Year, e.g., 03/2017">
                                             </div>
                                             <div>
                                                 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" 
@@ -77,13 +94,13 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
 
+                                            </div>
                                         </form>
                                     </div>
                                 </div>
+                            </div>
                         </div>
-                    </div>
 
 
                 <!-- Footer -->

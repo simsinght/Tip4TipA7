@@ -2219,7 +2219,7 @@
 	input[type="email"],
 	input[type="tel"],
 	select {
-		height: 1em;
+		height: 2em;
 	}
 
 	textarea {
@@ -3136,10 +3136,6 @@
 
 
 /* OUR CSS */
-  #submitButton {
-  	margin-top: 2em;
-  }
-
   .aboveButton {
     margin-bottom: 0px;
     margin-top: 2em;

@@ -5,16 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Credit Card</title>
 
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/credit.css">
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="assets/js/skel.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+
 </head>
 
 <body>
@@ -36,11 +32,32 @@
                     <div id="main">
                         <div class="inner">
                             <h1>Payment</h1>
-                                <div class="creditCardForm">
-                                    <div class="heading">
-                                        <h2>Credit Card Information</h2>
+                                <div class="amount-btns">
+                                    <h2> Select your tip amount:</h2>
+                                    <div class="btn-group" id="sos" data-toggle="buttons">
+                                        <label class="btn btn-primary active">
+                                            <input type="radio" name="options" id="option1" autocomplete="off" checked> $1.00
+                                        </label>
+                                        <label class="btn btn-primary">
+                                            <input type="radio" name="options" id="option2" autocomplete="off"> $5.00
+                                        </label>
+                                        <label class="btn btn-primary">
+                                            <input type="radio" name="options" id="option3" autocomplete="off"> $10.00
+                                        </label>
+                                    <form>
+                                        <div class = "ownAmount">
+                                            <label for="c2">Choose your own amount:</label>
+                                            <div class="input-group"> 
+                                                <span class="input-group-addon">$</span>
+                                                <input type="number" value="0" min="0" step="0.01" data-number-to-fixed="2" data-number-stepfactor="100" class="form-control currency" id="c2" />
+                                            </div>
+                                        </div>
+                                    </form>
                                     </div>
+                                </div>
+                                <div class="creditCardForm">
                                     <div class="payment">
+                                        <h2>Credit Card Information:</h2>
                                         <form>
                                             <div class="form-group owner">
                                                 <label for="owner">Owner</label>

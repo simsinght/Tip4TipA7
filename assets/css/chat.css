@@ -19,25 +19,99 @@ body {
   overflow: hidden;
 }
 
+.file-upload {
+	position: relative;
+	display: inline-block;
+}
+
+.attach_form {
+  background: #5DC8CD;
+  display: block;
+  padding: 10px !important;
+  color: #fff;
+  border-radius: .4em;
+  transition: background .3s;
+/*
+  width: 10em;
+  height: 10em;
+  background: #444;
+  margin: .5em auto;
+  position: relative;
+
+  font-size: 20px;
+  font-size: 20px;
+  color: white;
+  padding: 10px, 10px, 10px, 10px; */
+}
+
+.attach_file {
+  background: #5DC8CD;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 1;
+    width:0;
+    height: 100%;
+    opacity: 0;
+  /*width: 100%;
+  height: 100%;
+  opacity: 0; /* Hide the button 
+  cursor: pointer;
+
+  font-size: 20px;
+  font-size: 20px;
+  color: white;
+  padding: 10px, 10px, 10px, 10px;*/
+}
+
+.attach_text {
+  background: #5DC8CD;
+	margin: 0;
+	text-align: center;
+  font-size: 30px;
+  color: #fff;
+}
+
+.button2 {
+	margin: 0;
+	padding: 10px;
+  display: block;
+  position: relative;
+  float: left;
+  font-weight: 500;
+	font-size: 30px;
+  text-align: center;
+  line-height: 50px;
+  color: #FFF;
+  border-radius: 5px;
+  transition: all 0.2s ;
+  background: #00AE68;
+}
+
+.right {
+  float: right;
+}
+
+.name-solved {
+	display: flex;
+}
+
+/*
 .attatch_file {
   font-size: 20px;
-    font-size: 20px;
-    color: white;
-    padding: 10px, 10px, 10px, 10px;
+  font-size: 20px;
+  color: white;
+  padding: 10px, 10px, 10px, 10px;
 }
 
 .attatch_form {
   font-size: 20px;
-    font-size: 20px;
-    color: white;
-    padding: 10px, 10px, 10px, 10px;
-}
-
-.button1, .button2 {
-    font-size: 20px;
-    color: white;
-    padding: 10px, 10px, 10px, 10px;
-}
+  font-size: 20px;
+  color: white;
+  padding: 10px, 10px, 10px, 10px;
+}*/
 
 .bg {
   width: 100%;
@@ -54,7 +128,7 @@ body {
  --------------------*/
 .chat {
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
   z-index: 2;
   overflow: hidden;
   box-shadow: 0 5px 30px rgba(0, 0, 0, .2);

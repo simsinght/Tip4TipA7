@@ -19,6 +19,20 @@ body {
   overflow: hidden;
 }
 
+.attatch_file {
+  font-size: 20px;
+    font-size: 20px;
+    color: white;
+    padding: 10px, 10px, 10px, 10px;
+}
+
+.attatch_form {
+  font-size: 20px;
+    font-size: 20px;
+    color: white;
+    padding: 10px, 10px, 10px, 10px;
+}
+
 .button1, .button2 {
     font-size: 20px;
     color: white;

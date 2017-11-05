@@ -24,11 +24,17 @@ function setDate(){
   }
 }
 
+var user_input;
+
 function insertMessage() {
+
+  //{ return 'Babba di boopy.'; }
   msg = $('.message-input').val();
   if ($.trim(msg) == '') {
     return false;
   }
+  user_input = msg;
+
   $('<div class="message message-personal">' + msg + '</div>').appendTo($('.mCSB_container')).addClass('new');
   setDate();
   $('.message-input').val(null);
@@ -49,25 +55,18 @@ $(window).on('keydown', function(e) {
   }
 })
 
-var Fake = [
-  'Hi there, I\'m Fabio and you?',
+var first_messages = [
+  'Hi there, I\'m Alex and you?',
   'Nice to meet you',
-  'How are you?',
-  'Not too bad, thanks',
-  'What do you do?',
-  'That\'s awesome',
-  'Codepen is a nice place to stay',
-  'I think you\'re a nice person',
-  'Why do you think that?',
-  'Can you explain?',
-  'Anyway I\'ve gotta go now',
-  'It was a pleasure chat with you',
-  'Time to make a new codepen',
-  'Bye',
-  ':)'
+  'I can see that you need help updating your iPhone 6s. Is this true?',
 ]
 
+/* Different messages */
+var message_iteration = 0;
+var message = "";
+
 function fakeMessage() {
+  message_iteration++
   if ($('.message-input').val() != '') {
     return false;
   }
@@ -76,7 +75,23 @@ function fakeMessage() {
 
   setTimeout(function() {
     $('.message.loading').remove();
-    $('<div class="message new">' + Fake[i] + '</div>').appendTo($('.mCSB_container')).addClass('new');
+    if( message_iteration <= 3 ) {
+      $('<div class="message new">' + first_messages[i] + '</div>').appendTo($('.mCSB_container')).addClass('new');
+    }
+    if( message_iteration == 4) {
+      if( user_input.includes('yes') | user_input.includes('yup') | user_input.includes('correct')) {
+        message = "Have you tried turning it on and off?";
+      }
+    else {
+      if( user_input.includes('iphone') && user_input.includes('update')){
+        message = "I'm not too sure about this issue, but have you tried turning it on and off?";
+      }
+    }
+      if(user_input.includes('android') ) {
+        message = "Get an iPhone";
+      }
+    $('<div class="message new">' + message + '</div>').appendTo($('.mCSB_container')).addClass('new');
+    }
     setDate();
     updateScrollbar();
     i++;

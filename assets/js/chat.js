@@ -78,7 +78,16 @@ function fakeMessage() {
     if( message_iteration <= 3 ) {
       $('<div class="message new">' + first_messages[i] + '</div>').appendTo($('.mCSB_container')).addClass('new');
     }
-    if( message_iteration == 4) {
+
+    if( message_iteration == 4 ){
+			fancyBox = '<a href="images/upgrade.png" data-fancybox data-type="image" data-caption="This image has a caption">' +
+      '<img src="images/upgradeThumb.png" />' +
+  '</a>';
+
+      $('<div class="message new">' + fancyBox + '</div>').appendTo($('.mCSB_container')).addClass('new');
+    }
+
+    if( message_iteration > 4) {
       if( user_input.includes('yes') | user_input.includes('yup') | user_input.includes('correct')) {
         message = "Have you tried turning it on and off?";
       }

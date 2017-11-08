@@ -27,7 +27,10 @@
 					<div id="main">
 						<div class="inner">
 							<h1>What device do you need help with?</h1>
-              <input id="basics" />
+              <div class="row">
+                <input id="basics" />
+                <a href="loading.html"><button id="submitButton" class="">submit</button></a>
+              </div>
               <br>
               <br>
               <br>
@@ -94,8 +97,14 @@
       };
 
       console.log(options);
+      $('#submitButton').hide();
+
 
       $("#basics").easyAutocomplete(options);
+
+      $('#basics').keypress(function() {
+        $('#submitButton').show();
+      });
 
       </script>
 

@@ -3263,3 +3263,13 @@
 	.rating-stars ul > li.star.selected > i.fa {
 	  color:#FF912C;
 	}
+
+	/* Help Page Button on index.html */
+	.helpButton {
+		right: 0;
+		float: right;
+	}
+
+	.helpTitle {
+		font-weight: bold;
+	}

@@ -99,7 +99,7 @@
 							</section>
           <div>
             <p class="aboveButton">General Questions?</p>
-            <a href="loading.html"/><button class="ourButton">Connect with a
+            <a href="loading.html"/><button class="ourButton" id ="genButton">Connect with a
             Tipster</button></a>
           </div>
 						</div>
@@ -156,6 +156,13 @@
 				console.log("image click");
 				tracker = ga.getAll()[0];
 				tracker.send('event', 'printerImage', 'click');
+			});
+			</script>
+			<script>
+			$("#genButton").click(function() {
+				console.log("image click");
+				tracker = ga.getAll()[0];
+				tracker.send('event', 'genButton', 'click');
 			});
 			</script>
 
